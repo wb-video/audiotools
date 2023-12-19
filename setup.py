@@ -40,7 +40,9 @@ setup(
         "pyloudnorm",
         "importlib-resources",
         "scipy",
+        # "torch",
         "julius",
+        # "torchaudio",
         "ffmpy",
         "ipython",
         "rich",
@@ -58,14 +60,6 @@ setup(
         "tqdm",
     ],
     extras_require={
-        "cpu": [
-            "torch",
-            "torchaudio",
-        ],
-        "gpu": [
-            "torch+cu118",
-            "torchaudio+cu118",
-        ],
         "tests": [
             "pytest",
             "pytest-cov",
